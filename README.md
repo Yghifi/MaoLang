@@ -76,10 +76,10 @@ Expressions must be one of following cases:
 ##Introduction to project
 
 ###How to compile and run
-In Windows environment, you could run the makefile with GCC/G++(4.8.1 or higher), after that you would get MaoLang.exe. Testcase files should be passed in as the first argument of command lines, as what is shown in demo before.
+In Windows environment, you could run the makefile with GCC/G++(4.8.1 or later), after that you would get MaoLang.exe. Testcase files should be passed in as the first argument of command lines, as what is shown in demo before.
 
 ###Modules
-MaoLang Interpreter mainly consist of three parts: Scanner, Parser, Storage.
+MaoLang Interpreter mainly consists of three parts: Scanner, Parser, Storage.
 
 ####Scanner
 Source code: scanner.c, scanner.h
@@ -237,4 +237,20 @@ Stdafx.h includes the header file of C standard libary.
 
 ###Story behind
 
- 
+ Every course project is a chance for me to learn something new and also a challenge; this one is no exception. 
+
+At first glance the problem seemed puzzling -- a language executer? I just considered it as a compiler or a interpreter at the very beginning, so I spent two weeks reading books and finding materials about how to construct a simple compiler. I knew it's unnecessary to build a real compiler to meet the demand, but I still want to try because I thought it was not so difficult. Yet it turned out that I was too naive.
+
+By then three-quarters of December had already passed. There's no time for me to waste. I started to code, tried to solve the problem in the simplest way first to implement the basic functions, that is, to satisfy the simple cases.
+
+It was a bright, sunny day, the last Saturday of December. After eight hours of work, without stopping, I finished the variable declaration and storage part. I learn the data structure called "Trie Tree" with the help of Internet and it's not so hard to understand or implement that.  
+
+Surprisingly, my thoughts became clearer the next day. It makes sense that using methods of parsing, namely, syntax analysis, to get things done. So, in the light of the textbook and materials on the Internet, I writed my "arithmetic calculator", which is able to deal with a input with operators "+-*/". Then I tried to add assign operation "=" and the unary operators "+-" based on the "calculator". This is another eight-hour job, maybe longer, and it's absolutely tougher than what I did on Saturday. 
+
+Whatever, my own "Mao language executer" came out eventually with a whole weekend of hard work, though it's still a very simple one. Then on Monday and Tuesday I went on fixing some bugs and did the rest things like writing the makefile and this documentation.
+
+If you ask me what I've learned these days, I would rather tell you it is taking action that helps me getting rid of anxiety. I was worried about whether I am able to finish the project on time from the time I got the assignment till the instance I started to code. Of course, it's also important that I know to how to learn something completely new for me independently with the aid of Internet.
+
+Moreover, I found it interesting to learn about compilers, and indeed it helps me to understand how the code I write functions. Maybe in my spare time I would improve my little "Mao language executer" to a real mini C compiler, if I can.
+
+###**Thanks for reading!**
